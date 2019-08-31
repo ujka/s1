@@ -20,7 +20,7 @@ class MyJob(Job):
 
 class UsersAveragePlugin(Plugin):
     def register_jobs(self):
-        self.jobs.append(MyJob(10))
+        self.jobs.append(MyJob(60))
 
     def process_message(self, data):
         if data.get("type", False) == "message":
